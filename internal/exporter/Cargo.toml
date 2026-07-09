@@ -1,0 +1,21 @@
+[package]
+name = "go_resharp_exporter"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+resharp = { version = "0.6.19", features = ["serialize", "diag"] }
+resharp-algebra = { version = "0.6.19", features = ["serialize"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bincode = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true
