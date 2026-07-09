@@ -164,7 +164,7 @@ data, and engine setup.
 | Benchmark          | go-resharp            | go-resharp (WASM)  | RE2 (WASM)          | stdlib regexp        |
 |--------------------|----------------------:|--------------------:|---------------------:|---------------------:|
 | Literal            | **18991 MB/s (1x)**   | 4060 MB/s (4.7x)     | 870 MB/s (21.8x)      | 1659 MB/s (11.4x)     |
-| LiteralAlternation  | **439 MB/s (1x)**     | 1130 MB/s (0.4x)     | 148 MB/s (3.0x)       | 17.0 MB/s (25.7x)     |
+| LiteralAlternation  | 439 MB/s (2.6x)       | **1130 MB/s (1x)**   | 148 MB/s (7.6x)       | 17.0 MB/s (66.5x)     |
 | BoundedRepeat       | **268 MB/s (1x)**     | 150 MB/s (1.8x)      | 57.3 MB/s (4.7x)      | 21.6 MB/s (12.4x)     |
 | URL                 | **969 MB/s (1x)**     | 657 MB/s (1.5x)      | 184 MB/s (5.3x)       | 137 MB/s (7.1x)       |
 | Dictionary100       | **101 MB/s (1x)**     | 55.6 MB/s (1.8x)     | 13.0 MB/s (7.8x)      | 0.64 MB/s (157x)      |
